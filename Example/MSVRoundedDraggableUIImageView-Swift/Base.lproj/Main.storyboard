@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="MSVViewController" customModule="MSVRoundedDraggableUIImageView_Swift_Example" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="MFA-FF-Q3f" customClass="MSVRoundedDraggableImageView" customModule="MSVRoundedDraggableUIImageView_Swift">
+                                <rect key="frame" x="127" y="20" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="gEf-Sw-vRQ"/>
+                                    <constraint firstAttribute="width" secondItem="MFA-FF-Q3f" secondAttribute="height" multiplier="1:1" id="heK-bC-d48"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.00244267263" blue="0.93518975179999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDf-T4-E8n">
+                                <rect key="frame" x="0.0" y="633" width="375" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="MSVRoundedDraggableUIImageView"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="sBp-uF-uaX"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLx-hk-45O">
+                                <rect key="frame" x="163" y="594" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="whP-gf-Uak" eventType="valueChanged" id="TzP-iQ-hJF"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Move to start point?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTe-QO-VKs">
+                                <rect key="frame" x="111" y="565" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86364724629901235" green="0.86364724629901235" blue="0.86364724629901235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PDf-T4-E8n" firstAttribute="top" secondItem="zLx-hk-45O" secondAttribute="bottom" constant="8" id="BrB-wr-7ZS"/>
+                            <constraint firstItem="zLx-hk-45O" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="GJ3-MS-giO"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="PDf-T4-E8n" secondAttribute="bottom" id="KIw-ra-QiO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PDf-T4-E8n" secondAttribute="trailing" constant="-16" id="Q0A-na-3AT"/>
+                            <constraint firstItem="MFA-FF-Q3f" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="a66-NP-eCS"/>
+                            <constraint firstItem="PDf-T4-E8n" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="-16" id="dax-AG-GOa"/>
+                            <constraint firstItem="OTe-QO-VKs" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="uhm-YC-oZ6"/>
+                            <constraint firstItem="zLx-hk-45O" firstAttribute="top" secondItem="OTe-QO-VKs" secondAttribute="bottom" constant="8" id="xae-5N-XZT"/>
+                            <constraint firstItem="MFA-FF-Q3f" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="yS8-Bv-dV4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewOnTop" destination="MFA-FF-Q3f" id="hIl-xx-KaW"/>
+                        <outlet property="switchView" destination="zLx-hk-45O" id="dhf-0a-8y5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="393"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hand" width="80" height="80"/>
+    </resources>
+</document>

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MSVRoundedDraggableUIImageView-Swift_Example' do
+  pod 'MSVRoundedDraggableUIImageView-Swift', :path => '../'
+
+  target 'MSVRoundedDraggableUIImageView-Swift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
