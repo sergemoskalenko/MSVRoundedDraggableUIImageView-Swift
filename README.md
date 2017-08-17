@@ -5,6 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/MSVRoundedDraggableUIImageView-Swift.svg?style=flat)](http://cocoapods.org/pods/MSVRoundedDraggableUIImageView-Swift)
 [![Platform](https://img.shields.io/cocoapods/p/MSVRoundedDraggableUIImageView-Swift.svg?style=flat)](http://cocoapods.org/pods/MSVRoundedDraggableUIImageView-Swift)
 
+
+
+Online Web Demo: https://goo.gl/pHHKSv
+
+[<img src="https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView/blob/master/MSVRoundedDraggableUIImageView-01.png" alt="Screen" width="400"/>](https://goo.gl/pHHKSv)
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
