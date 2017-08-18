@@ -9,7 +9,7 @@
 
 Online Web Demo: https://goo.gl/pHHKSv
 
-[<img src="https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView/blob/master/MSVRoundedDraggableUIImageView-01.png" alt="Screen" width="400"/>](https://goo.gl/pHHKSv)
+[<img src="https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView-Swift/blob/master/scr001.png" alt="Screen" width="400"/>](https://goo.gl/pHHKSv)
 
 
 ## Example
