@@ -23,6 +23,198 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aqR-oy-eaK">
+                                <rect key="frame" x="7" y="322" width="361" height="235"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="235" id="ejX-dZ-p9n"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="http://camopu.rhorse.ru/ios">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <url key="NSLink" string="http://camopu.rhorse.ru/ios"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView-Swift">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <url key="NSLink" string="https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView-Swift"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="MFA-FF-Q3f" customClass="MSVRoundedDraggableImageView" customModule="MSVRoundedDraggableUIImageView_Swift">
                                 <rect key="frame" x="127" y="20" width="120" height="120"/>
                                 <constraints>
@@ -61,10 +253,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.86364724629901235" green="0.86364724629901235" blue="0.86364724629901235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="aqR-oy-eaK" secondAttribute="trailing" constant="-9" id="2c2-re-fht"/>
                             <constraint firstItem="PDf-T4-E8n" firstAttribute="top" secondItem="zLx-hk-45O" secondAttribute="bottom" constant="8" id="BrB-wr-7ZS"/>
                             <constraint firstItem="zLx-hk-45O" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="GJ3-MS-giO"/>
                             <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="PDf-T4-E8n" secondAttribute="bottom" id="KIw-ra-QiO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PDf-T4-E8n" secondAttribute="trailing" constant="-16" id="Q0A-na-3AT"/>
+                            <constraint firstItem="aqR-oy-eaK" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="-9" id="VTq-Hs-LxU"/>
+                            <constraint firstItem="OTe-QO-VKs" firstAttribute="top" secondItem="aqR-oy-eaK" secondAttribute="bottom" constant="8" id="VTw-je-K9g"/>
                             <constraint firstItem="MFA-FF-Q3f" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="a66-NP-eCS"/>
                             <constraint firstItem="PDf-T4-E8n" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="-16" id="dax-AG-GOa"/>
                             <constraint firstItem="OTe-QO-VKs" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="uhm-YC-oZ6"/>
@@ -75,11 +270,12 @@
                     <connections>
                         <outlet property="imageViewOnTop" destination="MFA-FF-Q3f" id="hIl-xx-KaW"/>
                         <outlet property="switchView" destination="zLx-hk-45O" id="dhf-0a-8y5"/>
+                        <outlet property="textView" destination="aqR-oy-eaK" id="4pB-4T-dxE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526" y="393"/>
+            <point key="canvasLocation" x="525.60000000000002" y="392.65367316341832"/>
         </scene>
     </scenes>
     <resources>

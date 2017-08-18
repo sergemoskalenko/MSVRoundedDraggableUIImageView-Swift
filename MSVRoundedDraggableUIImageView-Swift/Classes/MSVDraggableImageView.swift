@@ -18,7 +18,7 @@ public protocol MSVDraggableImageViewProtocol: NSObjectProtocol {
 
 
 public class MSVDraggableImageView : UIImageView {
-    public weak var delegate: MSVDraggableImageViewProtocol?
+    public weak var delegate: MSVDraggableImageViewProtocol? = nil
     public var maxShiftX: CGFloat = 0.0
     public var maxShiftY: CGFloat = 0.0
     public var isMovedToStartPoint: Bool = false
@@ -82,6 +82,14 @@ public class MSVDraggableImageView : UIImageView {
         }
     }
 
+    func didMoveToStart() {
+        if (self.delegate != nil) {
+            if (self.delegate?.responds(to: Selector(("draggableImageView:didMovedToStart:"))))! {
+                self.delegate?.draggableImageView(self, didMovedToStart: frame.origin)
+            }
+        }
+    }
+    
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch: UITouch? = touches.first
         startPoint = (touch?.location(in: superview))!
@@ -126,12 +134,17 @@ public class MSVDraggableImageView : UIImageView {
             return
         }
         isUserInteractionEnabled = false
+        if (self.delegate != nil) {
+            if (self.delegate?.responds(to: Selector(("draggableImageView:willMovedToStart:"))))! {
+                self.delegate?.draggableImageView(self, willMovedToStart: self.pinFrame.origin)
+            }
+        }
         UIView.animate(withDuration: 0.25, animations: {() -> Void in
             self.frame = self.pinFrame
         }, completion: {(_ finished: Bool) -> Void in
             self.isUserInteractionEnabled = true
             DispatchQueue.main.async {
-                self.update()
+                self.didMoveToStart()
             }
         })
         
