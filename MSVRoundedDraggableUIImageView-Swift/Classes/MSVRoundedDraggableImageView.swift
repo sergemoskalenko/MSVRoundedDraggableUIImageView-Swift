@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class MSVRoundedDraggableImageView: MSVDraggableImageView {
+open class MSVRoundedDraggableImageView: MSVDraggableImageView {
     @IBInspectable var borderColor: UIColor?
     @IBInspectable var borderWidth: CGFloat = 0.0
     
@@ -31,7 +31,7 @@ public class MSVRoundedDraggableImageView: MSVDraggableImageView {
         updateLayerProperties()
     }
     
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         updateLayerProperties()
     }

@@ -8,20 +8,21 @@
 
 import UIKit
 
-public protocol MSVDraggableImageViewProtocol: NSObjectProtocol {
-    func draggableImageView(_ sender: MSVDraggableImageView, didMovedTo point: CGPoint)
-    func draggableImageView(_ sender: MSVDraggableImageView, didMovedValue value: CGPoint)
-    func draggableImageView(_ sender: MSVDraggableImageView, willMovedToStart point: CGPoint)
-    func draggableImageView(_ sender: MSVDraggableImageView, didMovedToStart point: CGPoint)
+@objc public protocol MSVDraggableImageViewProtocol: NSObjectProtocol {
+    @objc optional func draggableImageView(_ sender: MSVDraggableImageView, didMovedTo point: CGPoint)
+    
+    @objc optional func draggableImageView(_ sender: MSVDraggableImageView, didMovedValue value: CGPoint)
+    
+    @objc optional func draggableImageView(_ sender: MSVDraggableImageView, willMovedToStart point: CGPoint)
+    
+    @objc optional func draggableImageView(_ sender: MSVDraggableImageView, didMovedToStart point: CGPoint)
 }
 
-
-
-public class MSVDraggableImageView : UIImageView {
-    public weak var delegate: MSVDraggableImageViewProtocol? = nil
-    public var maxShiftX: CGFloat = 0.0
-    public var maxShiftY: CGFloat = 0.0
-    public var isMovedToStartPoint: Bool = false
+open class MSVDraggableImageView : UIImageView {
+    open weak var delegate: MSVDraggableImageViewProtocol? = nil
+    open var maxShiftX: CGFloat = 0.0
+    open var maxShiftY: CGFloat = 0.0
+    open var isMovedToStartPoint: Bool = false
     
     var isToched: Bool = false
     var startPoint = CGPoint.zero
@@ -68,29 +69,29 @@ public class MSVDraggableImageView : UIImageView {
 
     func update() {
         if (self.delegate != nil) {
-            if (self.delegate?.responds(to: Selector(("draggableImageView:didMovedValue:"))))! {
+            if (self.delegate?.responds(to: #selector(MSVDraggableImageViewProtocol.draggableImageView(_:didMovedValue:))))! {
                 let x: CGFloat = frame.origin.x
                 let y: CGFloat = frame.origin.y
                 let xPin: CGFloat = pinFrame.origin.x
                 let yPin: CGFloat = pinFrame.origin.y
                 let value = CGPoint(x: 0.5 * (maxShiftX2 + x - xPin) / maxShiftX2, y: 0.5 * (maxShiftY2 + y - yPin) / maxShiftY2)
-                delegate?.draggableImageView(self, didMovedValue: value)
+                delegate?.draggableImageView!(self, didMovedValue: value)
             }
-            if (self.delegate?.responds(to: Selector(("draggableImageView:didMovedTo:"))))! {
-                self.delegate?.draggableImageView(self, didMovedTo: frame.origin)
+            if (self.delegate?.responds(to: #selector(MSVDraggableImageViewProtocol.draggableImageView(_:didMovedTo:))))! {
+                self.delegate?.draggableImageView!(self, didMovedTo: frame.origin)
             }
         }
     }
 
     func didMoveToStart() {
         if (self.delegate != nil) {
-            if (self.delegate?.responds(to: Selector(("draggableImageView:didMovedToStart:"))))! {
-                self.delegate?.draggableImageView(self, didMovedToStart: frame.origin)
+            if (self.delegate?.responds(to: #selector(MSVDraggableImageViewProtocol.draggableImageView(_:didMovedToStart:))))! {
+                self.delegate?.draggableImageView!(self, didMovedToStart: frame.origin)
             }
         }
     }
     
-    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch: UITouch? = touches.first
         startPoint = (touch?.location(in: superview))!
         if pinFrame.size.width < 0.001 && pinFrame.size.height < 0.001 {
@@ -100,7 +101,7 @@ public class MSVDraggableImageView : UIImageView {
         oldFrame = frame
     }
 
-    override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if isToched {
             let touch: UITouch? = touches.first
             let currPoint: CGPoint? = touch?.location(in: superview)
@@ -113,30 +114,30 @@ public class MSVDraggableImageView : UIImageView {
         }
     }
 
-    override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         frame = oldFrame
         update()
         isToched = false
     }
 
-    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         isToched = false
         moveToStartPoint()
     }
 
     // MARK: -
-    public func pinStartPoint() {
+    open func pinStartPoint() {
         pinFrame = frame
     }
 
-    public func moveToStartPoint() {
+    open func moveToStartPoint() {
         if !isMovedToStartPoint || (pinFrame.size.width < 0.001 && pinFrame.size.height < 0.001) {
             return
         }
         isUserInteractionEnabled = false
         if (self.delegate != nil) {
-            if (self.delegate?.responds(to: Selector(("draggableImageView:willMovedToStart:"))))! {
-                self.delegate?.draggableImageView(self, willMovedToStart: self.pinFrame.origin)
+            if (self.delegate?.responds(to: #selector(MSVDraggableImageViewProtocol.draggableImageView(_:willMovedToStart:))))! {
+                self.delegate?.draggableImageView!(self, willMovedToStart: self.pinFrame.origin)
             }
         }
         UIView.animate(withDuration: 0.25, animations: {() -> Void in

@@ -50,32 +50,37 @@ class MSVViewController: UIViewController, MSVDraggableImageViewProtocol {
     }
 
     func scrollDownTextView() {
-        textView.scrollRangeToVisible(NSMakeRange(textView.text.characters.count - 1, 1))
+        if (textView?.text.count)! > 0 {
+            let bottom = NSRange(location: (textView?.text.count)! - 1, length: 1)
+            textView?.scrollRangeToVisible(bottom)
+        }
     }
-    // -- Delegate methods
+    
+    
+    // MARK:  -- Delegate methods
 
-    func draggableImageView(_ sender: MSVDraggableImageView, didMovedTo point: CGPoint) {
+    open func draggableImageView(_ sender: MSVDraggableImageView, didMovedTo point: CGPoint) {
         scrollDownTextView()
         print("didMovedTo: (\(Int(point.x)), \(Int(point.y)))")
         textView.textStorage.append(NSAttributedString(string: "didMovedTo: (\(Int(point.x)), \(Int(point.y)))\n"))
         scrollDownTextView()
     }
     
-    func draggableImageView(_ sender: MSVDraggableImageView, didMovedValue value: CGPoint) {
+    open func draggableImageView(_ sender: MSVDraggableImageView, didMovedValue value: CGPoint) {
         scrollDownTextView()
         print("didMovedValue: (\(String(format: "%.2f",value.x)), \(String(format: "%.2f",value.y)))")
         textView.textStorage.append(NSAttributedString(string: "didMovedValue: (\(String(format: "%.2f",value.x)), \(String(format: "%.2f",value.y)))\n"))
         scrollDownTextView()
     }
     
-    func draggableImageView(_ sender: MSVDraggableImageView, willMovedToStart point: CGPoint) {
+    open func draggableImageView(_ sender: MSVDraggableImageView, willMovedToStart point: CGPoint) {
         scrollDownTextView()
          print("willMovedToStart: (\(Int(point.x)), \(Int(point.y)))")
         textView.textStorage.append(NSAttributedString(string: "willMovedToStart: (\(Int(point.x)), \(Int(point.y)))\n"))
         scrollDownTextView()
     }
     
-    func draggableImageView(_ sender: MSVDraggableImageView, didMovedToStart point: CGPoint) {
+    open func draggableImageView(_ sender: MSVDraggableImageView, didMovedToStart point: CGPoint) {
         scrollDownTextView()
          print("didMovedToStart: (\(Int(point.x)), \(Int(point.y)))")
         textView.textStorage.append(NSAttributedString(string: "didMovedToStart: (\(Int(point.x)), \(Int(point.y)))\n"))

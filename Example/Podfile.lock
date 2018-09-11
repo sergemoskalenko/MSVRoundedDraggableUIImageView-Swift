@@ -1,16 +1,16 @@
 PODS:
-  - MSVRoundedDraggableUIImageView-Swift (0.1.0)
+  - MSVRoundedDraggableUIImageView-Swift (0.2.0)
 
 DEPENDENCIES:
   - MSVRoundedDraggableUIImageView-Swift (from `../`)
 
 EXTERNAL SOURCES:
   MSVRoundedDraggableUIImageView-Swift:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  MSVRoundedDraggableUIImageView-Swift: a397c47a3808351bf835bc77c6cc35f4d3fcc962
+  MSVRoundedDraggableUIImageView-Swift: 1b6fa791bf767600bc8bd7d7de0049147906eb27
 
 PODFILE CHECKSUM: d81c4439cd923f68a552e1003213bc36e33f7753
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

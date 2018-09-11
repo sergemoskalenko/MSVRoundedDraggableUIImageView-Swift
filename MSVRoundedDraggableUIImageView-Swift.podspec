@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSVRoundedDraggableUIImageView-Swift'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'MSVRoundedDraggableUIImageView-Swift - simple rounded draggable UIImageView.'
 
 # This description is used to generate tags and improve search results.

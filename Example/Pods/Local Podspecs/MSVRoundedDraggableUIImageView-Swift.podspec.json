@@ -1,20 +1,21 @@
 {
   "name": "MSVRoundedDraggableUIImageView-Swift",
-  "version": "0.1.0",
-  "summary": "A short description of MSVRoundedDraggableUIImageView-Swift.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Developer iOS/MSVRoundedDraggableUIImageView-Swift",
+  "version": "0.2.0",
+  "summary": "MSVRoundedDraggableUIImageView-Swift - simple rounded draggable UIImageView.",
+  "description": "MSVRoundedDraggableUIImageView-Swift - simple rounded draggable UIImageView. IB designable.",
+  "homepage": "https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView-Swift",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Developer iOS": "sergiy.v.moskalenko@gmail.com"
+    "sergemoskalenko": "skype:camopu-ympo, http://camopu.rhorse.ru/ios"
   },
   "source": {
-    "git": "https://github.com/Developer iOS/MSVRoundedDraggableUIImageView-Swift.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView-Swift.git",
+    "tag": "0.2.0"
   },
+  "social_media_url": "https://twitter.com/sergemoskalenko",
   "platforms": {
     "ios": "8.0"
   },
