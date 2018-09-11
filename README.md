@@ -31,6 +31,14 @@ pod "MSVRoundedDraggableUIImageView-Swift"
 
 sergemoskalenko, skype:camopu-ympo, http://camopu.rhorse.ru/ios
 
+## Versions
+
+Objective-C:
+https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView
+
+Swift:
+https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView-Swift
+
 ## License
 
 MSVRoundedDraggableUIImageView-Swift is available under the MIT license. See the LICENSE file for more info.
