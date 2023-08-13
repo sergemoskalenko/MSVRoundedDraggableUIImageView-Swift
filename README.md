@@ -29,7 +29,7 @@ pod "MSVRoundedDraggableUIImageView-Swift"
 
 ## Author
 
-sergemoskalenko, skype:camopu-ympo, http://camopu.rhorse.ru/ios
+sergemoskalenko, skype:camopu-ympo
 
 ## Versions
 
