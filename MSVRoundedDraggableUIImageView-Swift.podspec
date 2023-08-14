@@ -24,7 +24,7 @@ MSVRoundedDraggableUIImageView-Swift - simple rounded draggable UIImageView. IB 
   s.homepage         = 'https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView-Swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sergemoskalenko' => 'skype:camopu-ympo, http://camopu.rhorse.ru/ios' }
+  s.author           = { 'sergemoskalenko' => 'skype:camopu-ympo, https://github.com/sergemoskalenko' }
   s.source           = { :git => 'https://github.com/sergemoskalenko/MSVRoundedDraggableUIImageView-Swift.git', :tag => s.version.to_s }
  s.social_media_url = 'https://twitter.com/sergemoskalenko'
 
