@@ -30,10 +30,10 @@
                                     <constraint firstAttribute="height" constant="235" id="ejX-dZ-p9n"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="http://camopu.rhorse.ru/ios">
+                                    <fragment content="https://github.com/sergemoskalenko">
                                         <attributes>
                                             <font key="NSFont" size="12" name="HelveticaNeue"/>
-                                            <url key="NSLink" string="http://camopu.rhorse.ru/ios"/>
+                                            <url key="NSLink" string="https://github.com/sergemoskalenko"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops>
                                                     <textTab alignment="left" location="28">
